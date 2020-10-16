@@ -6,7 +6,7 @@ const path = require('path');
 
 app.use(express.static(__dirname+'/public'));
 
-mongoose.connect('mongodb://localhost/tinyUrl', {
+mongoose.connect(process.env.MONGO_URL || "mongodb://localhost/urlShortener", {
   useNewUrlParser: true, useUnifiedTopology: true
 })
 

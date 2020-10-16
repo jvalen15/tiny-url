@@ -15,6 +15,9 @@
   "scripts": {
     "devStart": "nodemon server.js"
   },
+  "scripts": {
+    "Start": "node ./server.js"
+  },
   "author": "",
   "license": "ISC"
 }
